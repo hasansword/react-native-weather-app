@@ -91,7 +91,8 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 30,
     fontWeight: 'bold',
-    color: 'white'
+    color: 'white',
+    textAlign:'center',
   },
   container: {
     flex: 1,
@@ -100,13 +101,16 @@ const styles = StyleSheet.create({
   },
   item: {
     padding: 20,
-    marginVertical: 4,
-    marginHorizontal: 8,
+    marginVertical: 8,
+    marginHorizontal: 16,
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    borderWidth: 5,
-    backgroundColor: 'pink'
+    borderWidth: 2,
+    borderColor:'white',
+    backgroundColor: '#03A9F4',
+    opacity: 0.9,
+    borderRadius:20,
   },
   temp: {
     fontSize: 20,
