@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     textTheme:{
         fontWeight: 'bold',
     },
-    container:{
+    container:{ 
         alignItems:'center'
     }
 });
