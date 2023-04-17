@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react"
 import { View, StyleSheet} from "react-native"
 import City from "./src/screens/City"
