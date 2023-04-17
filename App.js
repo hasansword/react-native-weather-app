@@ -1,21 +1,22 @@
 /* eslint-disable no-unused-vars */
-import React from "react"
-import { View, StyleSheet} from "react-native"
-import City from "./src/screens/City"
-import CurrentWeather from "./src/screens/CurrentWeather"
-//import CurrentWeather from "./src/components/CurrentWeather"
-import UpcomingWeather from "./src/screens/UpcomingWeather"
+import React from 'react'
+import City from './src/screens/City'
+import CurrentWeather from './src/screens/CurrentWeather'
+import UpcomingWeather from './src/screens/UpcomingWeather'
+import { NavigationContainer } from '@react-navigation/native'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+
+const Tab = createBottomTabNavigator()
 const App = () => {
   return (
-    <View style={styles.container}>
-      <CurrentWeather/>
-      
-    </View>
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen name={'Current'} component={CurrentWeather} />
+        <Tab.Screen name={'Upcoming'} component={UpcomingWeather} />
+        <Tab.Screen name={'City'} component={City} />
+      </Tab.Navigator>
+    </NavigationContainer>
   )
 }
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  }
-})
+
 export default App
