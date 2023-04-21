@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "WeatherApp",
-    "slug": "WeatherApp",
+    "slug": "weatherapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,7 +15,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hasankilic.weatherapp"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +26,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c5a4f7cc-a310-4f25-8705-91ddcec5db8e"
+      }
+    },
+    "owner": "hasankilic"
   }
 }
